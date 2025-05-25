@@ -3,8 +3,9 @@ import { Container } from 'react-bootstrap';
 import { v4 as uuidv4 } from 'uuid';
 import AppNavbar from './components/Navbar';
 import TaskForm from './components/TaskForm';
-import TaskFilters from './components/TaskFilters';
 import TaskList from './components/TaskList';
+import TaskFilters from './components/TaskFilters';
+import { getRandomQuote } from './utils/quotes';
 import './App.css';
 import './styles/select-fix.css';
 
@@ -12,6 +13,7 @@ function App() {
   // Main state for our todo app
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState('all');
+  const [quote, setQuote] = useState('');
   
   // Load saved tasks when app starts - with improved error handling
   useEffect(() => {
@@ -31,6 +33,9 @@ function App() {
       // Attempt to recover from corrupted localStorage
       localStorage.removeItem('focusflow_tasks');
     }
+    
+    // Set a random quote
+    setQuote(getRandomQuote());
   }, []);
 
   // Save tasks whenever they change - with better key name and verification
@@ -160,9 +165,9 @@ function App() {
         
         <div className="section-divider"></div>
         
-        {/* Motivational Quote */}
+        {/* Motivational Quote - Random on each refresh */}
         <div className="quote-container">
-          <p className="quote-text">"The key to productivity is not to work harder, but to work smarter."</p>
+          <p className="quote-text">"{quote}"</p>
         </div>
         
         <div className="section-divider"></div>

@@ -22,7 +22,8 @@ section {
 
 .section-title:hover {
   color: #7E5750; /* Rose taupe */
-  transform: translateX(5px);
+  /* Removed transform to prevent blurry text */
+  padding-left: 5px; /* Use padding instead of transform */
 }
 
 .section-title::after {
@@ -118,7 +119,9 @@ section {
 }
 
 .feature-item:hover {
-  transform: translateY(-5px);
+  /* Removed transform to prevent blurry text */
+  margin-top: -5px; /* Use margin instead of transform */
+  margin-bottom: 5px; /* Balance the margin-top */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -134,8 +137,10 @@ section {
 }
 
 .feature-item:hover .feature-icon {
-  transform: scale(1.2) rotate(5deg);
+  /* Replaced transform with filter for smoother effect */
+  filter: brightness(1.2);
   color: var(--primary-color);
+  font-size: 2.5rem; /* Slightly larger instead of scaling */
 }
 
 .feature-item h5 {
@@ -210,7 +215,9 @@ section {
 }
 
 .contact-method:hover {
-  transform: translateY(-5px);
+  /* Removed transform to prevent blurry text */
+  margin-top: -5px; /* Use margin instead of transform */
+  margin-bottom: 5px; /* Balance the margin-top */
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -226,8 +233,10 @@ section {
 }
 
 .contact-method:hover .contact-icon {
-  transform: scale(1.2);
+  /* Replaced transform with filter for smoother effect */
+  filter: brightness(1.2);
   color: var(--primary-color);
+  font-size: 2.3rem; /* Slightly larger instead of scaling */
 }
 
 .contact-method h5 {

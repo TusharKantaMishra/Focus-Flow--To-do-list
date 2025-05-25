@@ -23,8 +23,8 @@
   /* Smaller headings */
   h1, h2, h3, h4, h5, h6,
   .section-title {
-    font-size: 1.5rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 1.3rem !important;
+    margin-bottom: 0.8rem !important;
   }
   
   /* Enhanced task items for mobile */
@@ -41,9 +41,9 @@
     gap: 5px !important;
   }
   
-  /* Make task text larger than actions for better hierarchy */
+  /* Make task text smaller on mobile */
   .todo-item .task-text {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     margin-bottom: 5px !important;
     flex: 1 1 100% !important;
   }
@@ -65,7 +65,7 @@
   .task-form input.form-control,
   .task-form select.form-select {
     padding: 0.5rem 0.8rem !important;
-    font-size: 0.95rem !important;
+    font-size: 0.85rem !important;
   }
   
   /* Smaller buttons */
@@ -73,19 +73,19 @@
   button,
   .add-button {
     padding: 0.4rem 0.8rem !important;
-    font-size: 0.95rem !important;
+    font-size: 0.85rem !important;
   }
   
   /* Smaller filter buttons */
   .filter-btn {
     padding: 0.3rem 0.6rem !important;
     margin: 0.15rem !important;
-    font-size: 0.85rem !important;
+    font-size: 0.75rem !important;
   }
   
   /* Enhanced navbar for mobile */
   .brand-text {
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
   }
   
   .navbar-brand .badge {
@@ -94,7 +94,7 @@
   }
   
   .nav-link-custom {
-    font-size: 1rem !important;
+    font-size: 0.85rem !important;
     padding: 0.4rem 0.6rem !important;
     margin: 0.2rem !important;
     text-align: center !important;
@@ -116,17 +116,18 @@
   
   /* Smaller feature items */
   .feature-item {
-    padding: 1rem !important;
+    padding: 0.8rem !important;
   }
   
   .feature-item h5 {
-    font-size: 1.1rem !important;
+    font-size: 0.95rem !important;
   }
   
   .feature-item p,
   .about-content p,
   .contact-method p {
-    font-size: 0.95rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.4 !important;
   }
   
   /* Smaller icons */
@@ -138,13 +139,13 @@
   
   /* Smaller quote */
   .quote-container {
-    padding: 1.2rem !important;
-    margin: 1.5rem 0 !important;
+    padding: 1rem !important;
+    margin: 1.2rem 0 !important;
   }
   
   .quote-text {
-    font-size: 1rem !important;
-    padding-left: 1.5rem !important;
+    font-size: 0.85rem !important;
+    padding-left: 1.2rem !important;
   }
   
   .quote-text::before {
@@ -153,18 +154,19 @@
   
   /* Adjust welcome text */
   .welcome-text {
-    font-size: 1.2rem !important;
-    padding: 0.8rem !important;
-    margin-bottom: 1.2rem !important;
+    font-size: 0.9rem !important;
+    padding: 0.6rem !important;
+    margin-bottom: 1rem !important;
   }
   
   /* Smaller footer */
   .app-footer {
-    padding: 1rem 0 !important;
+    padding: 0.8rem 0 !important;
   }
   
   .footer-text {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.5px !important;
   }
   
   /* Enhanced task form for mobile */

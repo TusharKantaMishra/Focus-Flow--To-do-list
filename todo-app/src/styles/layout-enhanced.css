@@ -50,7 +50,9 @@
 }
 
 .task-section:hover {
-  transform: translateY(-5px);
+  /* Removed transform to prevent blurry text */
+  margin-top: -5px; /* Use margin instead of transform */
+  margin-bottom: 5px; /* Balance the margin-top */
   box-shadow: 0 10px 20px rgba(110, 63, 55, 0.1);
 }
 
@@ -106,7 +108,9 @@
 
 .quote-container:hover {
   box-shadow: 0 10px 25px rgba(110, 63, 55, 0.15);
-  transform: translateY(-5px);
+  /* Removed transform to prevent blurry text */
+  margin-top: -5px; /* Use margin instead of transform */
+  margin-bottom: 5px; /* Balance the margin-top */
 }
 
 .quote-text {
@@ -233,6 +237,8 @@
 }
 
 .welcome-text:hover {
-  transform: translateY(-5px);
+  /* Removed transform to prevent blurry text */
+  margin-top: -5px; /* Use margin instead of transform */
+  margin-bottom: 5px; /* Balance the margin-top */
   box-shadow: 0 10px 25px rgba(110, 63, 55, 0.15);
 }

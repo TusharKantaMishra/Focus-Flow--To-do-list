@@ -59,7 +59,9 @@
 
 .nav-link-custom:hover {
   color: white !important;
-  transform: translateY(-1px);
+  /* Removed transform to prevent blurry text */
+  margin-top: -1px; /* Use margin instead of transform */
+  margin-bottom: 1px; /* Balance the margin-top */
 }
 
 .nav-link-custom::after {

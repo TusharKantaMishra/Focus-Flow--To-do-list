@@ -3,14 +3,16 @@
 /* Global font settings */
 body {
   font-family: "Fondamento", cursive;
-  font-weight: 400;
-  font-size: 1.05rem;
+  font-weight: 500; /* Increased for better clarity */
+  font-size: 1.1rem; /* Slightly increased for better readability */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Remove text shadow for clearer text */
   text-shadow: none;
   /* Improve text rendering */
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.3px; /* Slightly increased letter spacing for better legibility */
+  line-height: 1.6; /* Improved line height for better readability */
 }
 
 /* Headings */
@@ -18,10 +20,12 @@ h1, h2, h3, h4, h5, h6,
 .section-title,
 .welcome-text {
   font-family: "Fondamento", cursive !important;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px; /* Increased for better clarity */
   font-weight: 900 !important; /* Increased font weight for better clarity */
   text-shadow: none; /* Remove text shadow for clearer text */
-  color: #6E3F37 !important; /* Bole - for better contrast */
+  color: #5D2E26 !important; /* Deeper brown for better contrast */
+  margin-bottom: 0.8em !important; /* Better spacing */
+  line-height: 1.4 !important; /* Improved line height */
 }
 
 /* Navigation */
@@ -29,6 +33,8 @@ h1, h2, h3, h4, h5, h6,
 .navbar-nav .nav-link {
   font-family: "Fondamento", cursive !important;
   font-weight: 700 !important;
+  letter-spacing: 0.8px !important; /* Increased for better readability */
+  text-transform: capitalize !important; /* Better capitalization */
   font-size: 1.2rem !important;
   text-shadow: none;
   letter-spacing: 0.8px;
@@ -43,9 +49,10 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Fondamento", cursive !important;
   font-weight: 700 !important;
   font-size: 1.1rem !important;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px !important; /* Increased for better clarity */
   text-shadow: none;
-  color: #333333 !important;
+  color: #222222 !important; /* Darker for better contrast */
+  line-height: 1.5 !important; /* Improved line height */
 }
 
 /* Buttons */
@@ -53,7 +60,10 @@ h1, h2, h3, h4, h5, h6,
 button {
   font-family: "Fondamento", cursive !important;
   font-weight: 800 !important;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.8px !important; /* Increased for better clarity */
+  text-transform: capitalize !important; /* Better capitalization */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
   text-shadow: none;
   font-size: 1.1rem !important;
 }
@@ -64,9 +74,10 @@ button {
   font-family: "Fondamento", cursive !important;
   font-weight: 900 !important;
   font-size: 1.25rem !important;
-  color: #6E3F37 !important; /* Bole */
-  letter-spacing: 0.6px;
+  color: #5D2E26 !important; /* Darker brown for better contrast */
+  letter-spacing: 1px !important; /* Increased for better clarity */
   text-shadow: none;
+  margin-bottom: 0.5em !important; /* Better spacing */
 }
 
 .feature-item p,
@@ -75,32 +86,42 @@ button {
   font-family: "Fondamento", cursive !important;
   font-weight: 700 !important;
   font-size: 1.15rem !important;
-  line-height: 1.6 !important;
-  color: #333333 !important; /* Darker color for better readability */
-  letter-spacing: 0.5px;
+  line-height: 1.7 !important; /* Increased for better readability */
+  color: #222222 !important; /* Even darker color for better contrast */
+  letter-spacing: 0.7px !important; /* Increased for better clarity */
+  margin-bottom: 1em !important; /* Better spacing */
 }
 
 .quote-text {
   font-family: "Fondamento", cursive !important;
   font-weight: 800 !important;
-  letter-spacing: 0.8px;
-  font-size: 1.2rem !important;
-  color: #333333 !important;
+  letter-spacing: 1px !important; /* Increased for better clarity */
+  font-size: 1.3rem !important; /* Slightly larger */
+  color: #222222 !important; /* Darker for better contrast */
   text-shadow: none;
+  line-height: 1.6 !important; /* Better line height */
+  font-style: italic !important; /* Italicize quotes for better visual distinction */
 }
 
 /* Special styling for brand text to make it stand out */
 .navbar-brand .brand-text {
-  font-weight: 700;
-  letter-spacing: 0.8px;
+  font-weight: 900 !important; /* Increased weight */
+  letter-spacing: 1.2px !important; /* Increased spacing */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-shadow: none !important; /* Ensure no shadows */
 }
 
-/* Adjust section titles with the new font */
+/* Enhance section titles for maximum clarity */
 .section-title {
-  font-weight: 700;
-}
-
-/* Quote text with the fancy font */
-.quote-text {
-  font-style: italic;
+  font-weight: 900 !important; /* Increased weight */
+  font-size: 1.8rem !important; /* Larger size */
+  letter-spacing: 1.5px !important; /* Increased spacing */
+  text-align: center !important;
+  position: relative !important;
+  margin-bottom: 1.2rem !important;
+  color: #5D2E26 !important; /* Deeper color for better contrast */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  line-height: 1.4 !important;
 }
