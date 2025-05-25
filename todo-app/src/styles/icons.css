@@ -1,0 +1,77 @@
+/* Custom icon styling for the rose-brown color palette */
+
+/* Feature icons */
+.feature-icon,
+.bi-check-circle-fill,
+.bi-funnel-fill,
+.bi-lightning-fill,
+.bi-cloud-check-fill {
+  color: #7E5750 !important; /* Rose taupe */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.feature-item:hover .feature-icon,
+.feature-item:hover .bi-check-circle-fill,
+.feature-item:hover .bi-funnel-fill,
+.feature-item:hover .bi-lightning-fill,
+.feature-item:hover .bi-cloud-check-fill {
+  color: #6E3F37 !important; /* Bole - darker on hover */
+  transform: scale(1.1);
+}
+
+/* Contact icons */
+.contact-icon,
+.bi-envelope-fill,
+.bi-chat-fill {
+  color: #7E5750 !important; /* Rose taupe */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.contact-method:hover .contact-icon,
+.contact-method:hover .bi-envelope-fill,
+.contact-method:hover .bi-chat-fill {
+  color: #6E3F37 !important; /* Bole - darker on hover */
+  transform: scale(1.1);
+}
+
+/* Task management icons */
+.bi-trash, 
+.bi-pencil,
+.bi-check,
+.bi-x,
+.bi-flag-fill {
+  color: #7E6E6F !important; /* Dim gray */
+  transition: all 0.3s ease;
+}
+
+.btn:hover .bi-trash,
+.btn:hover .bi-pencil,
+.btn:hover .bi-check,
+.btn:hover .bi-x,
+.btn:hover .bi-flag-fill {
+  color: #6E3F37 !important; /* Bole */
+  transform: scale(1.1);
+}
+
+/* Misc icons */
+.bi-github,
+.bi-hourglass-split,
+.bi-star-fill,
+.bi-arrow-right {
+  color: #D5D6DD !important; /* Platinum */
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover .bi-github,
+.navbar-brand:hover .bi-hourglass-split,
+.btn:hover .bi-star-fill,
+.btn:hover .bi-arrow-right {
+  color: white !important;
+  transform: scale(1.05);
+}

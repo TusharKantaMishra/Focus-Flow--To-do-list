@@ -1,0 +1,144 @@
+/* Navbar styles */
+.navbar.navbar-glass,
+.navbar.navbar-dark,
+.navbar.bg-primary,
+.navbar-expand-lg.navbar-glass {
+  background-color: #7E5750 !important; /* Rose taupe - solid color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(204, 192, 197, 0.2);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.brand-text {
+  font-size: 1.6rem;
+  color: white !important;
+  font-family: 'Fondamento', cursive;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-shadow: none;
+}
+
+/* Pro badge styling */
+.navbar-brand .badge {
+  background-color: white !important; /* White for maximum contrast */
+  color: #6E3F37 !important; /* Bole */
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.8px !important;
+  border: none !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+  padding: 0.4em 0.7em !important;
+  font-family: 'Fondamento', cursive !important;
+}
+
+.navbar-brand .badge:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15) !important;
+  background-color: #ABA1A1 !important; /* Rose quartz */
+}
+
+/* Navigation links */
+.nav-link-custom {
+  color: #D5D6DD !important; /* Platinum - light color */
+  font-weight: 600;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+  background: transparent !important;
+}
+
+.nav-link-custom:hover {
+  color: white !important;
+  transform: translateY(-1px);
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #D5D6DD, #CCC0C5);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link-custom:hover::after {
+  width: 80%;
+}
+
+/* Icons in navbar */
+.nav-link-custom i,
+.navbar-brand i {
+  color: #D5D6DD !important; /* Platinum */
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover i,
+.navbar-brand:hover i {
+  color: white !important;
+  transform: scale(1.05);
+}
+
+/* Fix GitHub icon specifically */
+.nav-link-custom .bi-github {
+  color: #D5D6DD !important;
+}
+
+/* Greeting and time */
+.greeting-text {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.current-time {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.user-icon {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile navbar adjustments */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(94, 59, 115, 0.95);
+    margin: 0 -12px;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .nav-link-custom {
+    padding: 0.75rem !important;
+    margin: 0.25rem 0;
+  }
+  
+  .nav-link-custom:hover::after {
+    width: 40%;
+  }
+}

@@ -1,0 +1,127 @@
+/* Additional effects and animations */
+
+/* Quote container styling */
+.quote-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.quote-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(94, 59, 115, 0.15);
+}
+
+.quote-container::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 4rem;
+  color: var(--primary-color);
+  opacity: 0.1;
+  font-family: Georgia, serif;
+  transition: all 0.4s ease;
+}
+
+.quote-container:hover::before {
+  transform: scale(1.2) rotate(-10deg);
+  opacity: 0.15;
+}
+
+.quote-container::after {
+  content: '"';
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 4rem;
+  color: var(--tertiary-color);
+  opacity: 0.1;
+  font-family: Georgia, serif;
+  transition: all 0.4s ease;
+}
+
+.quote-container:hover::after {
+  transform: scale(1.2) rotate(10deg);
+  opacity: 0.15;
+}
+
+.quote-text {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.quote-container:hover .quote-text {
+  color: var(--text-primary);
+  transform: scale(1.02);
+}
+
+/* Task hover effects */
+.todo-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.todo-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--priority-high), var(--priority-low));
+  transition: width 0.4s ease;
+}
+
+.todo-item:hover::after {
+  width: 100%;
+}
+
+/* Footer styling */
+.app-footer {
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Empty state styling */
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.empty-state-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.empty-state-text {
+  color: #555;
+  font-weight: 300;
+}

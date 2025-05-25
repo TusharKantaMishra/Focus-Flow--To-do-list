@@ -1,0 +1,36 @@
+:root {
+  /* Color scheme using rose-brown palette */
+  --primary-color: #7E5750; /* Rose taupe - primary brand color */
+  --secondary-color: #D5D6DD; /* Platinum - secondary brand color */
+  --tertiary-color: #AD8882; /* Rosy brown 2 - accent color */
+  
+  /* Text colors */
+  --text-primary: #6E3F37; /* Bole - for headings */
+  --text-secondary: #7E6E6F; /* Dim gray - for body text */
+  --text-accent: #9B695F; /* Redwood - for accent text */
+  --text-light: #ECAEAC; /* Antiflash white - for light backgrounds */
+  
+  /* Background and card colors */
+  --bg-color: rgba(236, 234, 236, 0.85); /* Antiflash white */
+  --card-bg: rgba(236, 234, 236, 0.9); /* Antiflash white */
+  --glass-bg: rgba(204, 192, 197, 0.65); /* French gray */
+  
+  /* Navbar colors */
+  --navbar-bg: rgba(126, 87, 80, 0.9); /* Rose taupe - matches primary */
+  --navbar-text: rgba(236, 234, 236, 0.95); /* Antiflash white */
+  
+  /* Shadows and borders */
+  --glass-shadow: 0 8px 32px rgba(110, 63, 55, 0.15);
+  --glass-border: 1px solid rgba(204, 192, 197, 0.25);
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+  
+  /* Priority colors - matching rose-brown palette */
+  --priority-high: #6E3F37; /* Bole for high priority */
+  --priority-high-rgb: 110, 63, 55; /* RGB values for high priority */
+  --priority-medium: #9B695F; /* Redwood for medium priority */
+  --priority-medium-rgb: 155, 105, 95; /* RGB values for medium priority */
+  --priority-low: #AD8882; /* Rosy brown 2 for low priority */
+  --priority-low-rgb: 173, 136, 130; /* RGB values for low priority */
+}

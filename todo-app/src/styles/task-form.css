@@ -1,0 +1,117 @@
+/* Enhanced Task Form Styling */
+
+.task-form-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(110, 63, 55, 0.1);
+  transition: all 0.3s ease;
+  border-left: 5px solid #7E5750; /* Rose taupe */
+  position: relative;
+  overflow: hidden;
+}
+
+.task-form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(110, 63, 55, 0.15);
+}
+
+/* Input field styling */
+.task-form input.form-control {
+  border-radius: 10px;
+  border: 2px solid rgba(126, 87, 80, 0.2);
+  padding: 0.7rem 1rem;
+  font-family: "Fondamento", cursive;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+}
+
+.task-form input.form-control:focus {
+  border-color: #7E5750;
+  box-shadow: 0 0 0 0.25rem rgba(126, 87, 80, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Select styling */
+.task-form select.form-select {
+  border-radius: 10px;
+  border: 2px solid rgba(126, 87, 80, 0.2);
+  padding: 0.7rem 1rem;
+  font-family: "Fondamento", cursive;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.task-form select.form-select:focus {
+  border-color: #7E5750;
+  box-shadow: 0 0 0 0.25rem rgba(126, 87, 80, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Label styling */
+.task-form label {
+  font-family: "Fondamento", cursive;
+  font-weight: 600;
+  color: #6E3F37; /* Bole */
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.form-floating:focus-within label {
+  color: #7E5750; /* Rose taupe */
+  transform: scale(1.05);
+  transform-origin: left;
+}
+
+/* Form group animation */
+.form-group {
+  transition: all 0.3s ease;
+}
+
+.form-group:hover {
+  transform: translateX(5px);
+}
+
+/* Add button specific styling for the form */
+.task-form .add-button {
+  background: linear-gradient(45deg, #7E6E6F, #7E5750) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 700 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 8px rgba(110, 63, 55, 0.15) !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 10px !important;
+  letter-spacing: 0.5px;
+  padding: 0.7rem 1.2rem !important;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.task-form .add-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  z-index: -1;
+  transition: all 0.4s ease;
+  transform: translateY(100%);
+}
+
+.task-form .add-button:hover::after {
+  transform: translateY(0);
+}
+
+.task-form .add-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(110, 63, 55, 0.2) !important;
+}

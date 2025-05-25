@@ -1,0 +1,173 @@
+/* Variables */
+:root {
+  --primary-color: #6200EA; /* Deep purple */
+  --secondary-color: #03DAC6; /* Teal accent */
+  --tertiary-color: #B00020; /* Red accent */
+  --bg-color: rgba(255, 255, 255, 0.85);
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.18);
+  --transition-speed: 0.3s;
+}
+
+/* Glass morphism styling */
+.glassmorphism {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  transition: all var(--transition-speed) ease;
+}
+
+.glassmorphism:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Custom Button Styling */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #7c4dff; /* Lighter purple */
+  border-color: #7c4dff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(98, 0, 234, 0.25);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #333;
+}
+
+.btn-success:hover {
+  background-color: #00bfa5; /* Darker teal */
+  border-color: #00bfa5;
+  color: #333;
+}
+
+.btn-outline-danger {
+  color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+  transform: translateY(-2px);
+}
+
+/* Form Control Styling */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: all var(--transition-speed) ease;
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(98, 0, 234, 0.25);
+}
+
+/* Badge styling */
+.badge {
+  padding: 0.5em 0.75em;
+  border-radius: 6px;
+}
+
+.badge-primary {
+  background-color: var(--primary-color);
+}
+
+/* List Group Item Styling */
+.list-group {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.list-group-item {
+  border-left: 0;
+  border-right: 0;
+  padding: 1rem;
+  transition: all var(--transition-speed) ease;
+  background-color: var(--card-bg);
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.list-group-item:hover {
+  background-color: rgba(98, 0, 234, 0.03);
+}
+
+/* Custom animations */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .todo-container {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .todo-header {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+

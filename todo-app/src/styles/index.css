@@ -1,0 +1,9 @@
+/* Main CSS file that imports all modular CSS files */
+@import './variables.css';
+@import './layout.css';
+@import './navbar.css';
+@import './components.css';
+@import './buttons.css';
+@import './effects.css';
+@import './sections.css';
+@import './custom-overrides.css'; /* Custom overrides need to be imported last */

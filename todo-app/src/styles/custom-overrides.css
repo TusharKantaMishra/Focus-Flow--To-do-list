@@ -1,0 +1,166 @@
+/* Custom overrides for bootstrap components */
+
+/* Direct override for navbar background */
+.bg-custom-primary, 
+.custom-navbar,
+.navbar {
+  background-color: rgba(126, 87, 80, 0.9) !important;
+}
+
+/* Override for Bootstrap's default navbar colors */
+.navbar-dark, 
+.bg-primary,
+.navbar-expand-lg {
+  background-color: rgba(126, 87, 80, 0.9) !important;
+  border-color: rgba(126, 87, 80, 0.9) !important;
+}
+
+/* Force override any other navbar styles */
+.navbar[class*="bg-"] {
+  background-color: rgba(126, 87, 80, 0.9) !important;
+}
+
+/* Mobile navbar toggle button */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Ensure no red colors in navbar links */
+.navbar .nav-link,
+.navbar-nav .nav-link,
+.navbar a {
+  color: #D5D6DD !important;
+}
+
+.navbar .nav-link:hover,
+.navbar-nav .nav-link:hover,
+.navbar a:hover {
+  color: white !important;
+}
+
+/* Force all navbar icons to have correct color */
+.navbar i,
+.navbar .bi,
+.navbar svg {
+  color: #D5D6DD !important;
+}
+
+/* Ensure the navbar collapse has the same background on mobile */
+
+/* Add support for tertiary colored badges */
+.bg-tertiary {
+  background-color: #7E6E6F !important; /* Dim gray */
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.4em 0.8em !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Update success badge to match color scheme */
+.bg-success {
+  background-color: #ABA1A1 !important; /* Rose quartz */
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.4em 0.8em !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Custom priority badges */
+.bg-priority-high {
+  background-color: #6E3F37 !important; /* Bole */
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.4em 0.8em !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.bg-priority-medium {
+  background-color: #9B695F !important; /* Redwood */
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.4em 0.8em !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.bg-priority-low {
+  background-color: #ABA1A1 !important; /* Rose quartz */
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.4em 0.8em !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Improve badge styling */
+.badge {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.5px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.badge:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Make sure all button styles are using our color scheme */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #6e4887 !important; /* Slightly lighter purple */
+  border-color: #6e4887 !important;
+}
+
+/* Override any blue background elements */
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+/* Override any blue text */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Override form focus states */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--tertiary-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(173, 136, 130, 0.25) !important;
+}
+
+/* Override dropdown menu styles */
+.dropdown-item.active,
+.dropdown-item:active,
+option:checked,
+option:focus,
+option:hover,
+select:focus option:checked {
+  background-color: var(--tertiary-color) !important;
+  color: white !important;
+}
+
+/* Override select dropdown highlight color */
+.form-select option:hover,
+.form-select option:focus,
+.form-select option:active,
+.form-select option:checked {
+  background-color: var(--tertiary-color) !important;
+  color: white !important;
+}
+
+/* Override any link colors */
+a {
+  color: var(--tertiary-color);
+}
+
+a:hover {
+  color: #9c83bc;
+}

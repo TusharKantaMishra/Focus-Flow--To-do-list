@@ -1,0 +1,106 @@
+/* Typography styles with Fondamento font */
+
+/* Global font settings */
+body {
+  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-size: 1.05rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Remove text shadow for clearer text */
+  text-shadow: none;
+  /* Improve text rendering */
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.welcome-text {
+  font-family: "Fondamento", cursive !important;
+  letter-spacing: 0.5px;
+  font-weight: 900 !important; /* Increased font weight for better clarity */
+  text-shadow: none; /* Remove text shadow for clearer text */
+  color: #6E3F37 !important; /* Bole - for better contrast */
+}
+
+/* Navigation */
+.nav-link-custom,
+.navbar-nav .nav-link {
+  font-family: "Fondamento", cursive !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  text-shadow: none;
+  letter-spacing: 0.8px;
+}
+
+/* Task items */
+.todo-item .task-text,
+.todo-item h5,
+.task-form input,
+.task-form select,
+.filter-btn {
+  font-family: "Fondamento", cursive !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  letter-spacing: 0.5px;
+  text-shadow: none;
+  color: #333333 !important;
+}
+
+/* Buttons */
+.btn,
+button {
+  font-family: "Fondamento", cursive !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.6px;
+  text-shadow: none;
+  font-size: 1.1rem !important;
+}
+
+/* Feature and contact sections */
+.feature-item h5,
+.contact-method h5 {
+  font-family: "Fondamento", cursive !important;
+  font-weight: 900 !important;
+  font-size: 1.25rem !important;
+  color: #6E3F37 !important; /* Bole */
+  letter-spacing: 0.6px;
+  text-shadow: none;
+}
+
+.feature-item p,
+.contact-method p,
+.about-content p {
+  font-family: "Fondamento", cursive !important;
+  font-weight: 700 !important;
+  font-size: 1.15rem !important;
+  line-height: 1.6 !important;
+  color: #333333 !important; /* Darker color for better readability */
+  letter-spacing: 0.5px;
+}
+
+.quote-text {
+  font-family: "Fondamento", cursive !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.8px;
+  font-size: 1.2rem !important;
+  color: #333333 !important;
+  text-shadow: none;
+}
+
+/* Special styling for brand text to make it stand out */
+.navbar-brand .brand-text {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+/* Adjust section titles with the new font */
+.section-title {
+  font-weight: 700;
+}
+
+/* Quote text with the fancy font */
+.quote-text {
+  font-style: italic;
+}

@@ -1,0 +1,260 @@
+/* Responsive styles for mobile devices */
+
+/* General responsive adjustments */
+@media (max-width: 767.98px) {
+  /* Reduce base font size */
+  body {
+    font-size: 0.85rem !important;
+  }
+  
+  /* Smaller container padding */
+  .todo-container {
+    padding: 1rem !important;
+    margin: 0.5rem auto 1rem !important;
+    max-width: 100% !important;
+  }
+  
+  /* Smaller section padding */
+  section {
+    padding: 1rem 0 !important;
+    margin: 1rem 0 !important;
+  }
+  
+  /* Smaller headings */
+  h1, h2, h3, h4, h5, h6,
+  .section-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Enhanced task items for mobile */
+  .todo-item {
+    padding: 12px !important;
+    margin-bottom: 10px !important;
+    border-radius: 8px !important;
+    border-left-width: 3px !important;
+  }
+  
+  /* Better task actions layout on mobile */
+  .todo-actions {
+    flex-wrap: wrap !important;
+    gap: 5px !important;
+  }
+  
+  /* Make task text larger than actions for better hierarchy */
+  .todo-item .task-text {
+    font-size: 1rem !important;
+    margin-bottom: 5px !important;
+    flex: 1 1 100% !important;
+  }
+  
+  /* Task item action buttons smaller and more compact */
+  .todo-item .action-button {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  /* Adjust the task priority badge */
+  .todo-item .badge {
+    font-size: 0.7rem !important;
+    padding: 0.2em 0.5em !important;
+    margin-left: 5px !important;
+  }
+  
+  /* Smaller form inputs */
+  .task-form input.form-control,
+  .task-form select.form-select {
+    padding: 0.5rem 0.8rem !important;
+    font-size: 0.95rem !important;
+  }
+  
+  /* Smaller buttons */
+  .btn,
+  button,
+  .add-button {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.95rem !important;
+  }
+  
+  /* Smaller filter buttons */
+  .filter-btn {
+    padding: 0.3rem 0.6rem !important;
+    margin: 0.15rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  /* Enhanced navbar for mobile */
+  .brand-text {
+    font-size: 1.3rem !important;
+  }
+  
+  .navbar-brand .badge {
+    font-size: 0.6rem !important;
+    padding: 0.2em 0.5em !important;
+  }
+  
+  .nav-link-custom {
+    font-size: 1rem !important;
+    padding: 0.4rem 0.6rem !important;
+    margin: 0.2rem !important;
+    text-align: center !important;
+  }
+  
+  /* Make navbar collapse button more visible */
+  .navbar-toggler {
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    padding: 0.25rem 0.5rem !important;
+  }
+  
+  /* Better mobile navbar collapse styling */
+  .navbar-collapse {
+    margin-top: 0.5rem !important;
+    padding: 0.5rem !important;
+    border-radius: 8px !important;
+    background-color: rgba(126, 87, 80, 0.95) !important;
+  }
+  
+  /* Smaller feature items */
+  .feature-item {
+    padding: 1rem !important;
+  }
+  
+  .feature-item h5 {
+    font-size: 1.1rem !important;
+  }
+  
+  .feature-item p,
+  .about-content p,
+  .contact-method p {
+    font-size: 0.95rem !important;
+  }
+  
+  /* Smaller icons */
+  .feature-icon,
+  .contact-icon {
+    font-size: 1.8rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Smaller quote */
+  .quote-container {
+    padding: 1.2rem !important;
+    margin: 1.5rem 0 !important;
+  }
+  
+  .quote-text {
+    font-size: 1rem !important;
+    padding-left: 1.5rem !important;
+  }
+  
+  .quote-text::before {
+    font-size: 2rem !important;
+  }
+  
+  /* Adjust welcome text */
+  .welcome-text {
+    font-size: 1.2rem !important;
+    padding: 0.8rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  
+  /* Smaller footer */
+  .app-footer {
+    padding: 1rem 0 !important;
+  }
+  
+  .footer-text {
+    font-size: 1rem !important;
+  }
+  
+  /* Enhanced task form for mobile */
+  .task-form-container {
+    padding: 1rem !important;
+    border-radius: 8px !important;
+    border-left-width: 3px !important;
+  }
+  
+  /* Better layout for the task form on mobile */
+  .task-form {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  
+  .task-form .form-group {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+  }
+  
+  .task-form .form-control,
+  .task-form .form-select {
+    width: 100% !important;
+  }
+  
+  /* Make the Add button full width on mobile for easier tapping */
+  .task-form .add-button {
+    width: 100% !important;
+    margin-top: 5px !important;
+    padding: 0.5rem !important;
+  }
+  
+  /* Task form labels */
+  .task-form label {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Make feature and contact grids single column */
+  .features-grid,
+  .contact-methods {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  /* Smaller badges */
+  .badge {
+    font-size: 0.7rem !important;
+    padding: 0.25em 0.5em !important;
+  }
+  
+  /* Smaller dividers */
+  .section-divider {
+    margin: 1.5rem 0 !important;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Further reductions for very small screens */
+  body {
+    font-size: 0.9rem !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6,
+  .section-title {
+    font-size: 1.3rem !important;
+  }
+  
+  .brand-text {
+    font-size: 1.2rem !important;
+  }
+  
+  .todo-item {
+    padding: 10px !important;
+  }
+  
+  .btn,
+  button {
+    padding: 0.35rem 0.7rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Stack filter buttons vertically on very small screens */
+  .task-filters {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  
+  .filter-btn {
+    margin: 0.1rem 0 !important;
+    width: 100% !important;
+  }
+}

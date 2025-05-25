@@ -1,0 +1,94 @@
+/* Custom styles to fix dropdown blue highlighting */
+
+/* Override all Bootstrap blue backgrounds and highlights */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus,
+.bg-primary, .bg-info, .bg-primary-subtle,
+.dropdown-item.active, .dropdown-item:active,
+.list-group-item.active, 
+.page-item.active .page-link,
+.form-check-input:checked,
+.form-select:focus option:checked,
+.nav-pills .nav-link.active,
+.progress-bar,
+.active[data-bs-theme=light] {
+  background-color: var(--tertiary-color) !important;
+  border-color: var(--tertiary-color) !important;
+  color: white !important;
+}
+
+/* Override all Bootstrap blue text */
+.text-primary, .text-info,
+.link-primary, .link-info,
+.btn-link,
+.form-check-input:checked[type=checkbox] {
+  color: var(--tertiary-color) !important;
+}
+
+/* This ensures the selected option in dropdowns matches our color scheme */
+select option:hover,
+select option:checked,
+select option:focus {
+  background-color: var(--tertiary-color) !important;
+  background: var(--tertiary-color) !important;
+  color: white !important;
+}
+
+/* Ensure active options use our colors */
+.dropdown-menu .active {
+  background-color: var(--tertiary-color) !important;
+  color: white !important;
+}
+
+/* Fix for Firefox */
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--text-primary) !important;
+}
+
+/* Fix for all browsers */
+select:focus > option:checked,
+select option:checked,
+select option:active { 
+  background: var(--tertiary-color) !important;
+  background-color: var(--tertiary-color) !important;
+  box-shadow: 0 0 10px 100px var(--tertiary-color) inset !important;
+  color: white !important;
+}
+
+/* Direct fix for dropdown selection background */
+select option:checked,
+select option:hover {
+  background: var(--tertiary-color) !important;
+  color: white !important;
+}
+
+/* Specific fix for Webkit browsers like Chrome and Safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select {
+    background-color: white !important;
+  }
+  
+  select option:checked,
+  select option:hover {
+    background: var(--tertiary-color) !important;
+    color: white !important;
+  }
+}
+
+/* Additional fix for WebKit browsers */
+select {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23AD8882' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 0.75rem center !important;
+  background-size: 16px 12px !important;
+  padding-right: 2.5rem !important;
+}
+
+/* Custom focus style for select */
+select:focus {
+  border-color: var(--tertiary-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(226, 125, 96, 0.25) !important;
+  outline: none !important;
+}

@@ -1,0 +1,238 @@
+/* Enhanced layout for a more engaging and interactive UI */
+
+/* Container enhancements */
+.todo-container {
+  margin: 2rem auto 3rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(110, 63, 55, 0.2);
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add decorative elements */
+.todo-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255, 208, 203, 0.4) 0%, rgba(255, 230, 232, 0) 70%);
+  z-index: -1;
+  border-radius: 50%;
+  animation: float 15s infinite ease-in-out;
+}
+
+.todo-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(171, 161, 161, 0.4) 0%, rgba(255, 230, 232, 0) 70%);
+  z-index: -1;
+  border-radius: 50%;
+  animation: float 12s infinite ease-in-out reverse;
+}
+
+/* Create an interactive task section */
+.task-section {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2rem;
+  transition: all 0.4s ease;
+  position: relative;
+  border-left: 5px solid #7E5750;
+}
+
+.task-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(110, 63, 55, 0.1);
+}
+
+/* Feature grid redesign */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-item {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 15px 30px rgba(110, 63, 55, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.feature-item:hover .feature-icon {
+  transform: scale(1.2) translateZ(20px);
+}
+
+/* Animated quote container */
+.quote-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #ABA1A1;
+  transition: all 0.3s ease;
+}
+
+.quote-container:hover {
+  box-shadow: 0 10px 25px rgba(110, 63, 55, 0.15);
+  transform: translateY(-5px);
+}
+
+.quote-text {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.quote-text::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 3rem;
+  color: #7E5750;
+  opacity: 0.5;
+}
+
+/* Contact section enhancement */
+.contact-section {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+  border-left: 5px solid #6E3F37;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-method {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-method:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(110, 63, 55, 0.15);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover .contact-icon {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Add dividers between sections */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(to right, rgba(126, 87, 80, 0.1), rgba(126, 87, 80, 0.5), rgba(126, 87, 80, 0.1));
+  margin: 3rem 0;
+  border-radius: 2px;
+}
+
+/* About section enhancement */
+.about-section {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #7E6E6F;
+  transition: all 0.3s ease;
+}
+
+.about-section:hover {
+  box-shadow: 0 10px 25px rgba(110, 63, 55, 0.15);
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .todo-container {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  .features-grid,
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Welcome text enhancement */
+.welcome-text {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-left: 5px solid #ABA1A1;
+}
+
+.welcome-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(110, 63, 55, 0.15);
+}
